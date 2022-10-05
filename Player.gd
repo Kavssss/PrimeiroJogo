@@ -7,33 +7,29 @@ var motion = Vector2()
 func _physics_process(delta):
 	
 	motion.y += 20
-	
-	# if Input.is_key_pressed(KEY_T):
-		# $Sprite.play("talk")
-	# elif Input.is_key_pressed(KEY_K):
-		# $Sprite.play("kick")	
-	# elif Input.is_key_pressed(KEY_P):
-		# $Sprite.play("think")
-	# elif Input.is_key_pressed(KEY_C):
-		# $Sprite.play("cheer")	
-	if Input.is_key_pressed(KEY_A):
-		$Sprite.play("atack")
-	elif Input.is_action_pressed("ui_right"):
-		if Input.is_key_pressed(KEY_S):
-			motion.x = 200
+
+	if Input.is_key_pressed(KEY_J):
+		$Sprite.play("atack1")
+	elif Input.is_key_pressed(KEY_K):
+		$Sprite.play("atack2")
+	elif Input.is_key_pressed(KEY_L):
+		$Sprite.play("atack3")		
+	elif Input.is_action_pressed("ui_right") or Input.is_key_pressed(KEY_D):
+		if Input.is_key_pressed(KEY_SHIFT):
+			motion.x = 400
 			$Sprite.play("run")
 			$Sprite.flip_h = false
 		else:
-			motion.x = 100
+			motion.x = 200
 			$Sprite.play("walk")
 			$Sprite.flip_h = false
-	elif Input.is_action_pressed("ui_left"):
-		if Input.is_key_pressed(KEY_S):
-			motion.x = -400
+	elif Input.is_action_pressed("ui_left") or Input.is_key_pressed(KEY_A):
+		if Input.is_key_pressed(KEY_SHIFT):
+			motion.x = -700
 			$Sprite.play("run")
 			$Sprite.flip_h = true
 		else:
-			motion.x = -200
+			motion.x = -400
 			$Sprite.play("walk")
 			$Sprite.flip_h = true
 	else:
@@ -41,8 +37,8 @@ func _physics_process(delta):
 		$Sprite.play("idle")
 		
 	if is_on_floor():
-		if Input.is_action_pressed("ui_up"):
-			motion.y = -1000
+		if Input.is_action_pressed("ui_up") or Input.is_key_pressed(KEY_SPACE) or Input.is_key_pressed(KEY_W):
+			motion.y = -700
 	else:
 		$Sprite.play("jump")
 	
