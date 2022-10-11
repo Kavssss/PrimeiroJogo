@@ -1,41 +1,33 @@
-[gd_scene load_steps=73 format=2]
+[gd_scene load_steps=60 format=2]
 
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-B4.png" type="Texture" id=1]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player.gd" type="Script" id=2]
 [ext_resource path="res://chao.tres" type="TileSet" id=3]
 [ext_resource path="res://Texture/TX Village Props.png" type="Texture" id=4]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/walk-with-weapon-9.png" type="Texture" id=5]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/walk-with-weapon-5.png" type="Texture" id=6]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/walk-with-weapon-2.png" type="Texture" id=7]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/walk-with-weapon-3.png" type="Texture" id=8]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-9.png" type="Texture" id=5]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-11.png" type="Texture" id=6]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-8.png" type="Texture" id=7]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-3.png" type="Texture" id=8]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-6.png" type="Texture" id=9]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-7.png" type="Texture" id=10]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/walk-with-weapon-6.png" type="Texture" id=11]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-4.png" type="Texture" id=12]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-6.png" type="Texture" id=11]
+[ext_resource path="res://EnemyB.tscn" type="PackedScene" id=12]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-5.png" type="Texture" id=13]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/walk-with-weapon-8.png" type="Texture" id=14]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/walk-with-weapon-1.png" type="Texture" id=15]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/walk-with-weapon-10.png" type="Texture" id=16]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-B6.png" type="Texture" id=17]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-B5.png" type="Texture" id=18]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-B1.png" type="Texture" id=19]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-B2.png" type="Texture" id=20]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-B3.png" type="Texture" id=21]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-10.png" type="Texture" id=14]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-5.png" type="Texture" id=15]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-1.png" type="Texture" id=16]
 [ext_resource path="res://Backgrounds/medieval-background_7252841.jpg" type="Texture" id=22]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-A1.png" type="Texture" id=23]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-D1.png" type="Texture" id=24]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/walk-with-weapon-11.png" type="Texture" id=25]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/walk-with-weapon-4.png" type="Texture" id=26]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/walk-with-weapon-7.png" type="Texture" id=27]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-2.png" type="Texture" id=25]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-4.png" type="Texture" id=26]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-7.png" type="Texture" id=27]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/idle-with-weapon-3.png" type="Texture" id=28]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/idle-with-weapon-2.png" type="Texture" id=29]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/idle-with-weapon-5.png" type="Texture" id=30]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/idle-with-weapon-4.png" type="Texture" id=31]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/idle-with-weapon-6.png" type="Texture" id=32]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/idle-with-weapon-1.png" type="Texture" id=33]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-D5.png" type="Texture" id=34]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-A7.png" type="Texture" id=35]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-D2.png" type="Texture" id=36]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-1.png" type="Texture" id=37]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-13.png" type="Texture" id=38]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-2.png" type="Texture" id=39]
@@ -60,15 +52,10 @@
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-10.png" type="Texture" id=58]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-A6.png" type="Texture" id=59]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-A2.png" type="Texture" id=60]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-D3.png" type="Texture" id=62]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-D6.png" type="Texture" id=63]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-A3.png" type="Texture" id=64]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-A5.png" type="Texture" id=65]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-D7.png" type="Texture" id=67]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-D8.png" type="Texture" id=68]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-D9.png" type="Texture" id=69]
 [ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-A4.png" type="Texture" id=70]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-D4.png" type="Texture" id=75]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-4.png" type="Texture" id=76]
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
@@ -77,23 +64,13 @@ animations = [ {
 "name": "atack1",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 1 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 19 ) ],
-"loop": true,
-"name": "atack2",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 24 ), ExtResource( 36 ), ExtResource( 62 ), ExtResource( 75 ), ExtResource( 34 ), ExtResource( 63 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 24 ) ],
-"loop": true,
-"name": "atack3",
-"speed": 15.0
-}, {
 "frames": [ ExtResource( 33 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 31 ), ExtResource( 30 ), ExtResource( 32 ) ],
 "loop": true,
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 50 ), ExtResource( 53 ), ExtResource( 52 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 46 ), ExtResource( 48 ), ExtResource( 45 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 41 ), ExtResource( 49 ), ExtResource( 38 ), ExtResource( 47 ) ],
-"loop": false,
+"frames": [ ExtResource( 50 ), ExtResource( 53 ), ExtResource( 52 ), ExtResource( 76 ), ExtResource( 13 ), ExtResource( 46 ), ExtResource( 48 ), ExtResource( 45 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 41 ), ExtResource( 49 ), ExtResource( 38 ), ExtResource( 47 ) ],
+"loop": true,
 "name": "jump",
 "speed": 15.0
 }, {
@@ -102,7 +79,7 @@ animations = [ {
 "name": "run",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 15 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 26 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 27 ), ExtResource( 14 ), ExtResource( 5 ), ExtResource( 16 ), ExtResource( 25 ) ],
+"frames": [ ExtResource( 16 ), ExtResource( 25 ), ExtResource( 8 ), ExtResource( 26 ), ExtResource( 15 ), ExtResource( 11 ), ExtResource( 27 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 14 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "walk",
 "speed": 15.0
@@ -117,24 +94,25 @@ extents = Vector2( 43, 44.5 )
 [node name="World" type="Node2D"]
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( -1688, 288 )
-z_index = 10
+position = Vector2( -1679, 256 )
+z_index = 1
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="AnimatedSprite" parent="Player"]
-position = Vector2( 69.3333, -36 )
+position = Vector2( 2.00006, -1 )
 scale = Vector2( 2.08333, 2.08333 )
+z_index = 1
 frames = SubResource( 4 )
-animation = "atack3"
+animation = "idle"
+frame = 5
+playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2( 28, -31 )
+position = Vector2( 0, 1 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2( 1, 2 )
 current = true
 limit_left = -1750
 limit_top = -1750
@@ -158,7 +136,7 @@ region_enabled = true
 region_rect = Rect2( 416, 0, 32, 64 )
 
 [node name="StaticBody2D11" type="StaticBody2D" parent="Elements"]
-position = Vector2( 884, -320 )
+position = Vector2( 590, 65 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -208,7 +186,7 @@ position = Vector2( 4, 0 )
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 32, 32 )
 format = 1
-tile_data = PoolIntArray( -131128, 6, 0, -65592, 6, 0, -131040, 0, 0, -131039, 17, 0, -131038, 17, 0, -131037, 17, 0, -131036, 17, 0, -131035, 1, 0, -131034, 2, 0, -56, 6, 0, 65480, 6, 0, 131016, 6, 0, 196552, 6, 0, 262088, 6, 0, 327624, 6, 0, 393160, 6, 0, 327712, 0, 0, 327713, 1, 0, 327714, 1, 0, 327715, 1, 0, 327716, 1, 0, 327717, 2, 0, 458696, 6, 0, 393244, 0, 0, 393245, 1, 0, 393246, 2, 0, 524232, 6, 0, 589768, 6, 0, 524313, 0, 0, 524314, 1, 0, 524315, 2, 0, 655304, 6, 0, 720840, 6, 0, 720841, 1, 0, 720842, 1, 0, 720843, 1, 0, 720844, 1, 0, 720845, 1, 0, 720846, 1, 0, 720847, 1, 0, 720848, 1, 0, 720849, 1, 0, 720850, 1, 0, 720851, 1, 0, 720852, 1, 0, 720853, 1, 0, 720854, 1, 0, 720855, 1, 0, 720856, 1, 0, 720857, 1, 0, 720858, 1, 0, 720859, 1, 0, 720860, 1, 0, 720861, 1, 0, 720862, 1, 0, 720863, 1, 0, 720864, 0, 0, 720865, 1, 0, 720866, 1, 0, 720867, 1, 0, 720868, 1, 0, 720869, 1, 0, 720870, 1, 0, 720871, 1, 0, 720872, 1, 0, 720873, 1, 0, 720874, 1, 0, 720875, 1, 0, 720876, 1, 0, 720877, 1, 0, 720878, 1, 0, 720879, 1, 0, 720880, 1, 0, 720881, 1, 0, 720882, 1, 0, 720883, 1, 0, 720884, 1, 0, 720885, 1, 0, 720886, 1, 0, 720887, 1, 0, 720888, 1, 0, 720889, 1, 0, 720890, 1, 0, 720891, 1, 0, 720892, 1, 0, 720893, 1, 0, 720894, 1, 0, 720895, 1, 0, 655360, 1, 0, 655361, 1, 0, 655362, 1, 0, 655363, 1, 0, 655364, 1, 0, 655365, 1, 0, 655366, 1, 0, 655367, 1, 0, 655368, 1, 0, 655369, 1, 0, 655370, 1, 0, 655371, 1, 0, 655372, 1, 0, 655373, 1, 0, 655374, 1, 0, 655375, 1, 0, 655376, 1, 0, 655377, 1, 0, 655378, 1, 0, 655379, 1, 0, 655380, 1, 0, 655381, 1, 0, 655382, 1, 0, 655383, 1, 0, 655384, 1, 0, 655385, 1, 0, 655386, 1, 0, 655387, 1, 0, 655388, 1, 0, 655389, 1, 0, 655390, 1, 0, 655391, 1, 0, 655392, 1, 0, 655393, 1, 0, 655394, 1, 0, 655395, 1, 0, 655396, 1, 0, 655397, 1, 0, 655398, 1, 0, 655399, 1, 0, 655400, 1, 0, 655401, 1, 0, 655402, 1, 0, 655403, 1, 0, 655404, 1, 0 )
+tile_data = PoolIntArray( -131128, 6, 0, -65592, 6, 0, -131040, 0, 0, -131039, 17, 0, -131038, 17, 0, -131037, 17, 0, -131036, 1, 0, -131035, 1, 0, -131034, 1, 0, -131033, 1, 0, -131032, 1, 0, -131031, 1, 0, -131030, 1, 0, -131029, 1, 0, -131028, 1, 0, -131027, 1, 0, -131026, 1, 0, -131025, 1, 0, -131024, 1, 0, -131023, 1, 0, -131022, 1, 0, -131021, 1, 0, -131020, 1, 0, -131019, 1, 0, -131018, 1, 0, -131017, 1, 0, -131016, 1, 0, -131015, 1, 0, -131014, 1, 0, -131013, 1, 0, -131012, 1, 0, -131011, 2, 0, -56, 6, 0, 65480, 6, 0, 70, 0, 0, 71, 2, 0, 131016, 6, 0, 196552, 6, 0, 131139, 0, 0, 131140, 2, 0, 262088, 6, 0, 327624, 6, 0, 262208, 0, 0, 262209, 1, 0, 262210, 2, 0, 393160, 6, 0, 327712, 0, 0, 327713, 1, 0, 327714, 1, 0, 327715, 1, 0, 327716, 1, 0, 327717, 2, 0, 458696, 6, 0, 393276, 0, 0, 393277, 1, 0, 393278, 1, 0, 393279, 2, 0, 524232, 6, 0, 589768, 6, 0, 524344, 0, 0, 524345, 1, 0, 524346, 1, 0, 524347, 2, 0, 655304, 6, 0, 720840, 6, 0, 720841, 1, 0, 720842, 1, 0, 720843, 1, 0, 720844, 1, 0, 720845, 1, 0, 720846, 1, 0, 720847, 1, 0, 720848, 1, 0, 720849, 1, 0, 720850, 1, 0, 720851, 1, 0, 720852, 1, 0, 720853, 1, 0, 720854, 1, 0, 720855, 1, 0, 720856, 1, 0, 720857, 1, 0, 720858, 1, 0, 720859, 1, 0, 720860, 1, 0, 720861, 1, 0, 720862, 1, 0, 720863, 1, 0, 720864, 0, 0, 720865, 1, 0, 720866, 1, 0, 720867, 1, 0, 720868, 1, 0, 720869, 1, 0, 720870, 1, 0, 720871, 1, 0, 720872, 1, 0, 720873, 1, 0, 720874, 1, 0, 720875, 1, 0, 720876, 1, 0, 720877, 1, 0, 720878, 1, 0, 720879, 1, 0, 720880, 1, 0, 720881, 1, 0, 720882, 1, 0, 720883, 1, 0, 720884, 1, 0, 720885, 1, 0, 720886, 1, 0, 720887, 1, 0, 720888, 1, 0, 720889, 1, 0, 720890, 1, 0, 720891, 1, 0, 720892, 1, 0, 720893, 1, 0, 720894, 1, 0, 720895, 1, 0, 655360, 1, 0, 655361, 1, 0, 655362, 1, 0, 655363, 1, 0, 655364, 1, 0, 655365, 1, 0, 655366, 1, 0, 655367, 1, 0, 655368, 1, 0, 655369, 1, 0, 655370, 1, 0, 655371, 1, 0, 655372, 1, 0, 655373, 1, 0, 655374, 1, 0, 655375, 1, 0, 655376, 1, 0, 655377, 1, 0, 655378, 1, 0, 655379, 1, 0, 655380, 1, 0, 655381, 1, 0, 655382, 1, 0, 655383, 1, 0, 655384, 1, 0, 655385, 1, 0, 655386, 1, 0, 655387, 1, 0, 655388, 1, 0, 655389, 1, 0, 655390, 1, 0, 655391, 1, 0, 655392, 1, 0, 655393, 1, 0, 655394, 1, 0, 655395, 1, 0, 655396, 1, 0, 655397, 1, 0, 655398, 1, 0, 655399, 1, 0, 655400, 1, 0, 655401, 1, 0, 655402, 1, 0, 655403, 1, 0, 655404, 1, 0, 655409, 0, 0, 655410, 1, 0, 655411, 1, 0, 655412, 1, 0, 655413, 1, 0, 655414, 1, 0, 655415, 2, 0 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -223,3 +201,9 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 scale = Vector2( 0.562324, 0.562324 )
 texture = ExtResource( 22 )
+
+[node name="Enemy" parent="." instance=ExtResource( 1 )]
+position = Vector2( -777.379, 222.108 )
+
+[node name="EnemyB" parent="." instance=ExtResource( 12 )]
+position = Vector2( -207, 223 )

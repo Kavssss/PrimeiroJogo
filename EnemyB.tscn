@@ -1,0 +1,38 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://EnemyB.gd" type="Script" id=1]
+[ext_resource path="res://HeroandOpponents_v1/2 Enemy/PNG/walk-3.png" type="Texture" id=2]
+[ext_resource path="res://HeroandOpponents_v1/2 Enemy/PNG/walk-1.png" type="Texture" id=3]
+[ext_resource path="res://HeroandOpponents_v1/2 Enemy/PNG/walk-5.png" type="Texture" id=4]
+[ext_resource path="res://HeroandOpponents_v1/2 Enemy/PNG/walk-6.png" type="Texture" id=5]
+[ext_resource path="res://HeroandOpponents_v1/2 Enemy/PNG/walk-4.png" type="Texture" id=6]
+[ext_resource path="res://HeroandOpponents_v1/2 Enemy/PNG/walk-2.png" type="Texture" id=7]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32, 61 )
+
+[node name="EnemyB" type="StaticBody2D"]
+position = Vector2( -704, 223 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 2.05844, 2.05844 )
+z_index = 1
+frames = SubResource( 1 )
+animation = "walk"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 6, 37 )
+shape = SubResource( 2 )
