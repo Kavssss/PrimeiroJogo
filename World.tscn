@@ -1,88 +1,85 @@
-[gd_scene load_steps=60 format=2]
+[gd_scene load_steps=52 format=2]
 
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player.gd" type="Script" id=2]
 [ext_resource path="res://chao.tres" type="TileSet" id=3]
 [ext_resource path="res://Texture/TX Village Props.png" type="Texture" id=4]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-9.png" type="Texture" id=5]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-11.png" type="Texture" id=6]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-8.png" type="Texture" id=7]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-3.png" type="Texture" id=8]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-6.png" type="Texture" id=9]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-7.png" type="Texture" id=10]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-6.png" type="Texture" id=11]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump3.png" type="Texture" id=6]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump5.png" type="Texture" id=9]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump1.png" type="Texture" id=11]
 [ext_resource path="res://EnemyB.tscn" type="PackedScene" id=12]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-5.png" type="Texture" id=13]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-10.png" type="Texture" id=14]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-5.png" type="Texture" id=15]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-1.png" type="Texture" id=16]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/Idle6.png" type="Texture" id=13]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/atack1-3.png" type="Texture" id=14]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/atack1-1.png" type="Texture" id=15]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/atack1-5.png" type="Texture" id=16]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/atack1-7.png" type="Texture" id=17]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/atack1-4.png" type="Texture" id=18]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/atack1-6.png" type="Texture" id=19]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/atack1-2.png" type="Texture" id=20]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk6.png" type="Texture" id=21]
 [ext_resource path="res://Backgrounds/medieval-background_7252841.jpg" type="Texture" id=22]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-A1.png" type="Texture" id=23]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-2.png" type="Texture" id=25]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-4.png" type="Texture" id=26]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk-with-weapon-7.png" type="Texture" id=27]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/idle-with-weapon-3.png" type="Texture" id=28]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/idle-with-weapon-2.png" type="Texture" id=29]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/idle-with-weapon-5.png" type="Texture" id=30]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/idle-with-weapon-4.png" type="Texture" id=31]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/idle-with-weapon-6.png" type="Texture" id=32]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/idle-with-weapon-1.png" type="Texture" id=33]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-A7.png" type="Texture" id=35]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-1.png" type="Texture" id=37]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-13.png" type="Texture" id=38]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-2.png" type="Texture" id=39]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-3.png" type="Texture" id=40]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-11.png" type="Texture" id=41]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-5.png" type="Texture" id=42]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-9.png" type="Texture" id=43]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-10.png" type="Texture" id=44]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-8.png" type="Texture" id=45]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-6.png" type="Texture" id=46]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-14.png" type="Texture" id=47]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-7.png" type="Texture" id=48]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-12.png" type="Texture" id=49]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-1.png" type="Texture" id=50]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-4.png" type="Texture" id=51]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-3.png" type="Texture" id=52]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-2.png" type="Texture" id=53]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-8.png" type="Texture" id=54]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-11.png" type="Texture" id=55]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-9.png" type="Texture" id=56]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-12.png" type="Texture" id=57]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run-10.png" type="Texture" id=58]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-A6.png" type="Texture" id=59]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-A2.png" type="Texture" id=60]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-A3.png" type="Texture" id=64]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-A5.png" type="Texture" id=65]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Attacks/attack-A4.png" type="Texture" id=70]
-[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump-4.png" type="Texture" id=76]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk7.png" type="Texture" id=23]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run11.png" type="Texture" id=24]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run4.png" type="Texture" id=25]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump9.png" type="Texture" id=26]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run5.png" type="Texture" id=27]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run2.png" type="Texture" id=30]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run3.png" type="Texture" id=31]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk2.png" type="Texture" id=32]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run8.png" type="Texture" id=33]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk1.png" type="Texture" id=34]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk3.png" type="Texture" id=35]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk4.png" type="Texture" id=36]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk8.png" type="Texture" id=37]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk10.png" type="Texture" id=38]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/Idle1.png" type="Texture" id=39]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/Idle2.png" type="Texture" id=40]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run9.png" type="Texture" id=41]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk9.png" type="Texture" id=42]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/Idle3.png" type="Texture" id=43]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run10.png" type="Texture" id=44]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/Idle4.png" type="Texture" id=45]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Idle/Idle5.png" type="Texture" id=46]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run7.png" type="Texture" id=48]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump11.png" type="Texture" id=50]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Jump/jump13.png" type="Texture" id=51]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run12.png" type="Texture" id=52]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run6.png" type="Texture" id=53]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk5.png" type="Texture" id=54]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Walk/walk11.png" type="Texture" id=55]
+[ext_resource path="res://HeroandOpponents_v1/Player/PNG/Run/run1.png" type="Texture" id=56]
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ ExtResource( 23 ), ExtResource( 60 ), ExtResource( 64 ), ExtResource( 70 ), ExtResource( 65 ), ExtResource( 59 ), ExtResource( 35 ), ExtResource( 23 ) ],
+"frames": [ ExtResource( 15 ), ExtResource( 20 ), ExtResource( 14 ), ExtResource( 18 ), ExtResource( 16 ), ExtResource( 19 ), ExtResource( 17 ) ],
 "loop": true,
 "name": "atack1",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 33 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 31 ), ExtResource( 30 ), ExtResource( 32 ) ],
+"frames": [ ExtResource( 39 ), ExtResource( 40 ), ExtResource( 43 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 13 ) ],
 "loop": true,
 "name": "idle",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 51 ), ExtResource( 50 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "jumpDown",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 50 ), ExtResource( 53 ), ExtResource( 52 ), ExtResource( 76 ), ExtResource( 13 ), ExtResource( 46 ), ExtResource( 48 ), ExtResource( 45 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 41 ), ExtResource( 49 ), ExtResource( 38 ), ExtResource( 47 ) ],
+"frames": [ ExtResource( 9 ), ExtResource( 6 ), ExtResource( 11 ) ],
 "loop": true,
-"name": "jump",
-"speed": 15.0
+"name": "jumpUp",
+"speed": 3.0
 }, {
-"frames": [ ExtResource( 37 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 51 ), ExtResource( 42 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 54 ), ExtResource( 56 ), ExtResource( 58 ), ExtResource( 55 ), ExtResource( 57 ) ],
+"frames": [ ExtResource( 52 ), ExtResource( 24 ), ExtResource( 44 ), ExtResource( 41 ), ExtResource( 33 ), ExtResource( 48 ), ExtResource( 53 ), ExtResource( 27 ), ExtResource( 25 ), ExtResource( 31 ), ExtResource( 30 ), ExtResource( 56 ) ],
 "loop": true,
 "name": "run",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 16 ), ExtResource( 25 ), ExtResource( 8 ), ExtResource( 26 ), ExtResource( 15 ), ExtResource( 11 ), ExtResource( 27 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 14 ), ExtResource( 6 ) ],
+"frames": [ ExtResource( 55 ), ExtResource( 38 ), ExtResource( 42 ), ExtResource( 37 ), ExtResource( 23 ), ExtResource( 21 ), ExtResource( 54 ), ExtResource( 36 ), ExtResource( 35 ), ExtResource( 32 ), ExtResource( 34 ) ],
 "loop": true,
 "name": "walk",
-"speed": 15.0
+"speed": 12.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -99,12 +96,12 @@ z_index = 1
 script = ExtResource( 2 )
 
 [node name="Sprite" type="AnimatedSprite" parent="Player"]
-position = Vector2( 2.00006, -1 )
-scale = Vector2( 2.08333, 2.08333 )
+position = Vector2( 1, -21 )
+scale = Vector2( 0.52381, 0.52381 )
 z_index = 1
 frames = SubResource( 4 )
-animation = "idle"
-frame = 5
+animation = "jumpDown"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
@@ -191,7 +188,7 @@ tile_data = PoolIntArray( -131128, 6, 0, -65592, 6, 0, -131040, 0, 0, -131039, 1
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2( -1240, 48 )
+position = Vector2( -1032, 47 )
 motion_scale = Vector2( 0.5, 1 )
 motion_mirroring = Vector2( 1045, 0 )
 __meta__ = {

@@ -35,12 +35,15 @@ func _physics_process(delta):
 	else:
 		motion.x = 0
 		$Sprite.play("idle")
-		
-	if !is_on_floor():
-		$Sprite.play("jump")
-	else:
+
+	if is_on_floor():
 		if Input.is_action_pressed("ui_up") or Input.is_key_pressed(KEY_SPACE) or Input.is_key_pressed(KEY_W):
 			motion.y = -600
+	else:
+		if motion.y < 0:
+			$Sprite.play("jumpUp")
+		else:
+			$Sprite.play("jumpDown")
 	
 	if motion.y >= 1500:
 		get_tree().quit()
