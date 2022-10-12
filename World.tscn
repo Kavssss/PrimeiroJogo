@@ -62,12 +62,12 @@ animations = [ {
 "speed": 3.0
 }, {
 "frames": [ ExtResource( 51 ), ExtResource( 50 ), ExtResource( 26 ) ],
-"loop": true,
+"loop": false,
 "name": "jumpDown",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 9 ), ExtResource( 6 ), ExtResource( 11 ) ],
-"loop": true,
+"loop": false,
 "name": "jumpUp",
 "speed": 3.0
 }, {
@@ -100,7 +100,7 @@ position = Vector2( 1, -21 )
 scale = Vector2( 0.52381, 0.52381 )
 z_index = 1
 frames = SubResource( 4 )
-animation = "jumpDown"
+animation = "jumpUp"
 frame = 2
 playing = true
 

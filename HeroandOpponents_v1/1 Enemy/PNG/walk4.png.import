@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/walk-6.png-ec43a3ee1c2c83c64de39e9fa8f10bdb.stex"
+path="res://.import/walk4.png-03485f1dae9b8814dde6ba00d4655318.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://HeroandOpponents_v1/1 Enemy/PNG/walk-6.png"
-dest_files=[ "res://.import/walk-6.png-ec43a3ee1c2c83c64de39e9fa8f10bdb.stex" ]
+source_file="res://HeroandOpponents_v1/1 Enemy/PNG/walk4.png"
+dest_files=[ "res://.import/walk4.png-03485f1dae9b8814dde6ba00d4655318.stex" ]
 
 [params]
 

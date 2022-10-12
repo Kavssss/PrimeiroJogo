@@ -3,17 +3,12 @@ extends KinematicBody2D
 const UP = Vector2(0, -1)
 var motion = Vector2()
 
+func _physics_process(_delta):
 
-func _physics_process(delta):
-	
 	motion.y += 20
 
 	if Input.is_key_pressed(KEY_J):
 		$Sprite.play("atack1")
-	# elif Input.is_key_pressed(KEY_K):
-		# $Sprite.play("atack2")
-	# elif Input.is_key_pressed(KEY_L):
-		# $Sprite.play("atack3")
 	elif Input.is_action_pressed("ui_right") or Input.is_key_pressed(KEY_D):
 		if Input.is_key_pressed(KEY_SHIFT):
 			motion.x = 500

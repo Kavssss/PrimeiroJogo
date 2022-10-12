@@ -1,23 +1,23 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Enemy.gd" type="Script" id=1]
-[ext_resource path="res://HeroandOpponents_v1/1 Enemy/PNG/walk-2.png" type="Texture" id=2]
-[ext_resource path="res://HeroandOpponents_v1/1 Enemy/PNG/walk-1.png" type="Texture" id=3]
-[ext_resource path="res://HeroandOpponents_v1/1 Enemy/PNG/walk-3.png" type="Texture" id=4]
-[ext_resource path="res://HeroandOpponents_v1/1 Enemy/PNG/walk-5.png" type="Texture" id=5]
-[ext_resource path="res://HeroandOpponents_v1/1 Enemy/PNG/walk-4.png" type="Texture" id=6]
-[ext_resource path="res://HeroandOpponents_v1/1 Enemy/PNG/walk-6.png" type="Texture" id=7]
+[ext_resource path="res://HeroandOpponents_v1/1 Enemy/PNG/walk6.png" type="Texture" id=2]
+[ext_resource path="res://HeroandOpponents_v1/1 Enemy/PNG/walk4.png" type="Texture" id=3]
+[ext_resource path="res://HeroandOpponents_v1/1 Enemy/PNG/walk3.png" type="Texture" id=4]
+[ext_resource path="res://HeroandOpponents_v1/1 Enemy/PNG/walk2.png" type="Texture" id=5]
+[ext_resource path="res://HeroandOpponents_v1/1 Enemy/PNG/walk5.png" type="Texture" id=6]
+[ext_resource path="res://HeroandOpponents_v1/1 Enemy/PNG/walk1.png" type="Texture" id=7]
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 7 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "walk",
 "speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 25, 61.5 )
+extents = Vector2( 24.25, 62 )
 
 [node name="Enemy" type="StaticBody2D"]
 position = Vector2( -749, 256 )
@@ -27,7 +27,8 @@ __meta__ = {
 }
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
-scale = Vector2( 2.04393, 2.04393 )
+position = Vector2( 20.491, 13.5 )
+scale = Vector2( 0.514881, 0.514881 )
 z_index = 1
 frames = SubResource( 5 )
 animation = "walk"
@@ -35,5 +36,5 @@ frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 8, 36.5 )
+position = Vector2( 19.75, 38 )
 shape = SubResource( 6 )
